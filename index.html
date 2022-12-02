@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,27 +10,31 @@
 </head>
 
 <body>
-  <header>
-    <h1>Угадай Число!</h1>
-    <p class="between">(Между 1 и 20)</p>
-    <button class="btn again">Сначала!</button>
-    <div class="question">???</div>
-  </header>
-  <main>
-    <section class="left">
-      <form class="left-form" action="#" method="post">
-        <input type="number" class="number-input" required min="1" max="20" />
-        <button type="submit" class="btn check">Проверить!</button>
-      </form>
-    </section>
-    <section class="right">
-      <p class="guess-message">Начни угадывать</p>
-      <p class="label-score">Очки: <span class="score">20</span></p>
-      <p class="label-highscore">
-        Лучший результат: <span class="highscore">0</span>
-      </p>
-    </section>
-  </main>
+  <div class="wrapper">
+    <div class="header-wrapper">
+      <header>
+        <h1>Угадай Число!</h1>
+        <p class="between">(Между 1 и 20)</p>
+        <button class="btn again">Сначала!</button>
+        <div class="question">???</div>
+      </header>
+    </div>
+    <main>
+      <section class="left">
+        <form class="left-form" action="#" method="post">
+          <input type="number" class="number-input" required min="1" max="20" />
+          <button type="submit" class="btn check">Проверить!</button>
+        </form>
+      </section>
+      <section class="right">
+        <p class="guess-message">Начни угадывать</p>
+        <p class="label-score">Очки: <span class="score">20</span></p>
+        <p class="label-highscore">
+          Лучший результат: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+  </div>
   <script src="script.js" type="module"></script>
 </body>
 
